@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     DP_time = []
     BIT_time = []
-    check_value = []
+    check_weight = []
     
     for i in range(5):
         set_seed(i)
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
         res,s_time = subset_bit(N,W,w_list)
         BIT_time.append(s_time)
-        check_value.append(res)
+        check_weight.append(res)
         print(f"BIT_seed={seed}",(res,s_time))
 
     # print(f"DP_time",DP_time)
